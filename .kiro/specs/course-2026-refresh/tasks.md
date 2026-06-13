@@ -6,36 +6,36 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
 
 ## Tasks
 
-- [ ] 1. Phase 0 — Bootstrap & Repo Restructuring
-  - [ ] 1.1 Create `.gitbook.yaml` at repo root with `root: docs/`
+- [x] 1. Phase 0 — Bootstrap & Repo Restructuring
+  - [x] 1.1 Create `.gitbook.yaml` at repo root with `root: docs/`
     - File content: `root: docs/`
     - _Requirements: 1.1_
-  - [ ] 1.2 Create `docs/` directory and move all existing course Markdown content into it
+  - [x] 1.2 Create `docs/` directory and move all existing course Markdown content into it
     - Move all module folders and their files into `docs/`
     - Move current `SUMMARY.md` into `docs/SUMMARY.md`
     - Move current course `README.md` to `docs/README.md`
     - _Requirements: 1.2_
-  - [ ] 1.3 Create a new repo-root `README.md` describing the repository purpose
+  - [x] 1.3 Create a new repo-root `README.md` describing the repository purpose
     - Distinct from the course intro page inside `docs/`
     - _Requirements: 1.3_
-  - [ ] 1.4 Create repo-root management files
+  - [x] 1.4 Create repo-root management files
     - Create `course-content-audit.md` at repo root
     - Create `tasks.md` at repo root for refresh work items
     - Create `docs-map.md` documenting the intended page hierarchy
     - Create `freshness-checklist.md` at repo root listing pages with freshness stamps
     - _Requirements: 1.4, 1.5, 1.6, 13.6_
-  - [ ] 1.5 Rename module directories to kebab-case slugs
+  - [x] 1.5 Rename module directories to kebab-case slugs
     - `project-sec-cik-lookup-module` → `docs/project-sec-cik-lookup`
     - `optional-front-end-module-with-aws-amplify` → `docs/partner-bot-web-page`
     - Ensure all internal links update accordingly
     - _Requirements: 1.2, 6.1_
-  - [ ] 1.6 Create stub `docs/SUMMARY.md` with target structure
+  - [x] 1.6 Create stub `docs/SUMMARY.md` with target structure
     - Implement the full SUMMARY.md navigation tree from the design document
     - Include part groups: Foundations, Cloud Deployment — SAM, Cloud Deployment — CDK, Full-Stack Integration, Advanced Modules, Reference
     - Create placeholder README.md files for new modules that don't exist yet (`cdk-bridge/`, `mcp-module/`, `langchain-and-rag/`)
     - Each placeholder README must read: "This module unlocks later in the course. Content is scheduled — check back after Week 6." Do NOT leave them blank.
     - _Requirements: 1.2, 7.1, 10.4, 11.4_
-  - [ ] 1.7 Create `docs/reference/` directory with placeholder pages
+  - [x] 1.7 Create `docs/reference/` directory with placeholder pages
     - Create `docs/reference/models.md` (placeholder)
     - Create `docs/reference/contract.md` (placeholder)
     - Create `docs/reference/conventions.md` (placeholder)

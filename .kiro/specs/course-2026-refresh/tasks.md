@@ -189,12 +189,12 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
     - React form with Amplify UI components
     - Follow Pedagogy_Template
     - _Requirements: 9.4, 16.1_
-  - [ ] 11.4 Write `docs/partner-bot-web-page/connect-to-lambda.md`
+  - [x] 11.4 Write `docs/partner-bot-web-page/connect-to-lambda.md`
     - API Gateway integration with existing Lambda
     - Reference Contract_Page for request/response format
     - Follow Pedagogy_Template
     - _Requirements: 5.3, 9.4, 16.1_
-  - [ ] 11.5 Write `docs/partner-bot-web-page/authentication-with-cognito.md`
+  - [x] 11.5 Write `docs/partner-bot-web-page/authentication-with-cognito.md`
     - Cognito auth setup via Amplify Gen 2
     - Follow Pedagogy_Template
     - _Requirements: 9.1, 9.4, 16.1_

@@ -1,0 +1,37 @@
+# Grep-gate banned-pattern rules.
+# scripts/grep-gate.sh reads this file and scans docs/ for violations.
+# Each rule defines a regex pattern, an optional allow_in list (paths relative
+# to the repo root where the pattern is permitted), and a human-readable message.
+# Patterns are stored as raw regex — no YAML quoting escape processing needed.
+
+rules:
+  - name: hardcoded-model-id
+    pattern: 'anthropic\.claude|us\.anthropic\.claude'
+    allow_in:
+      - "docs/reference/models.md"
+    message: "Hardcoded model ID found. Use a link to reference/models.md instead."
+
+  - name: optional-heading
+    pattern: '^#+.*[Oo]ptional'
+    allow_in: []
+    message: "Do not use 'optional' in headings. Use '(advanced -- skim)' instead."
+
+  - name: ai-chat-artifacts
+    pattern: 'Sure!|Great question!|As an AI|I''d be happy to|Let me explain'
+    allow_in: []
+    message: "AI-chat artifact detected. Rewrite in direct voice."
+
+  - name: emoji
+    pattern: '[\x{1F600}-\x{1F64F}\x{1F300}-\x{1F5FF}\x{1F680}-\x{1F6FF}\x{2600}-\x{26FF}\x{2700}-\x{27BF}\x{FE00}-\x{FE0F}\x{1F900}-\x{1F9FF}\x{1FA00}-\x{1FA6F}\x{1FA70}-\x{1FAFF}\x{200D}\x{20E3}]'
+    allow_in: []
+    message: "Emoji detected. Remove and use plain text."
+
+  - name: wrong-python-version
+    pattern: '(?i)python\s*3\.(?!12\b)\d+|runtime.*?3\.(?!12\b)\d+'
+    allow_in: []
+    message: "Non-standard Python version. Course requires Python 3.12."
+
+  - name: cra-reference
+    pattern: 'create-react-app|react-scripts|\bCRA\b'
+    allow_in: []
+    message: "Create React App reference found. Course uses Vite + Amplify Gen 2."

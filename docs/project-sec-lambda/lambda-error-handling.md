@@ -91,3 +91,7 @@ Your SEC Lambda functions will encounter these error categories:
 | Unhandled | Anything not caught above | 500 — internal error (log full traceback) |
 
 </details>
+
+---
+
+Last verified: 2026-06

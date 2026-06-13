@@ -61,6 +61,56 @@ The model used for inference is defined in [Models](../reference/models.md). Lin
 You need two `AWS::Serverless::Function` resources. Each specifies `Runtime`, `Handler`, `CodeUri` (pointing to the function subdirectory), and its event source. Lambda 1 gets a `Schedule` event; Lambda 2 gets no event source in the template (it is invoked programmatically).
 
 The S3 bucket is a separate `AWS::S3::Bucket` resource with `VersioningConfiguration` set.
+
+```yaml
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: SEC Lambda project — EDGAR refresh and document retrieval
+
+Globals:
+  Function:
+    Runtime: python3.12
+    Timeout: 30
+    MemorySize: 256
+
+Resources:
+  EdgarRefreshFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: app.lambda_handler
+      CodeUri: edgar_refresh/
+      Environment:
+        Variables:
+          BUCKET_NAME: !Ref EdgarBucket
+      Policies:
+        - S3CrudPolicy:
+            BucketName: !Ref EdgarBucket
+      Events:
+        DailyRefresh:
+          Type: Schedule
+          Properties:
+            Schedule: cron(0 6 * * ? *)
+
+  DocumentRetrievalFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: app.lambda_handler
+      CodeUri: document_retrieval/
+      Environment:
+        Variables:
+          BUCKET_NAME: !Ref EdgarBucket
+      Policies:
+        - S3ReadPolicy:
+            BucketName: !Ref EdgarBucket
+
+  EdgarBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      VersioningConfiguration:
+        Status: Enabled
+```
+
+Note: both functions inherit `Runtime: python3.12` from the `Globals` section. Each function's `CodeUri` points to a subdirectory containing its own `requirements.txt` with `requests` listed.
 </details>
 
 <details>
@@ -98,3 +148,7 @@ This runs the function in a Docker container matching the Lambda runtime. If you
 
 SAM `Schedule` expressions use UTC. If you set `cron(0 12 * * ? *)` expecting noon local time, it fires at noon UTC. Adjust for your timezone during testing, or set a frequent schedule (every 5 minutes) to verify quickly, then switch to daily.
 </details>
+
+---
+
+Last verified: 2026-06

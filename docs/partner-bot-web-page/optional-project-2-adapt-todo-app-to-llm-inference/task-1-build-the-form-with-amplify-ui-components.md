@@ -3,7 +3,7 @@
 #### Learning goals
 
 * **UI composition:** Use SelectField, TextField, Button, and View from Amplify UI.
-* **Contract-first design:** Define a clear request/response schema for your inference Lambda.
+* **Contract-first design:** Build your form against the [Lambda Contract](../../reference/contract.md).
 * **Integration:** Send form data to your Lambda and render the response.
 
 #### Prerequisites
@@ -14,11 +14,11 @@
 
 
 
-Build a UI out of Amplify Components. Use `SelectField` three times once for partner, then year then period.&#x20;
+Build a UI out of Amplify Components. Your form must produce a request body conforming to the [Lambda Contract](../../reference/contract.md). Use `SelectField` three times: once for company (mapped to a stock ticker), then year, then period.
 
-* partner: string (e.g., “Acme Corp”)
-* year: number (e.g., 2023)
-* period: enum: "Annual" | "Q1" | "Q2" | "Q3" | "Q4"
+* ticker: string — use a `SelectField` with human-readable company names that maps to the uppercase stock ticker (e.g., "Apple" maps to `"AAPL"`)
+* year: number (e.g., 2024)
+* period: enum: `"Q1"` | `"Q2"` | `"Q3"` | `"Q4"` | `"FY"`
 
 Then use the `TextField` component to write your question.
 
@@ -28,7 +28,7 @@ Then have one `Button`.
 
 * Query: Call the Lambda with the values you have
 
-Lastly, present the results in `View`  component.
+Lastly, present the results in `View` component.
 
 Docs:
 
@@ -37,7 +37,7 @@ Docs:
 * Button: https://ui.docs.amplify.aws/react/components/button
 * View (for display): https://ui.docs.amplify.aws/react/getting-started/introduction
 
-Reminder this is what the lambda input looks like. So you will likely need to add a period and keep a mapping in your `SelectField` to go from human readable Company Name to stock ticker.
+Your `SelectField` for company displays human-readable names but your submit handler must map to the stock ticker before sending the request. See the [Lambda Contract](../../reference/contract.md) for the full schema.
 
 ```json
 {

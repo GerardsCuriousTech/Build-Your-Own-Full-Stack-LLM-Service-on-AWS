@@ -37,3 +37,7 @@ Both functions reuse the SEC modules you built in earlier projects (CIK lookup, 
 |------|---------|
 | [Lambda Project Setup](lambda-project-setup.md) | Initialize the SAM project, configure `template.yaml`, package dependencies |
 | [Lambda Error Handling](lambda-error-handling.md) | Error patterns, CloudWatch logs, local debugging with `sam local invoke` |
+
+---
+
+Last verified: 2026-06

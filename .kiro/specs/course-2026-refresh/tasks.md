@@ -289,11 +289,11 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
   - Run CI pipeline locally (or via a test PR with intentional violations) to verify all gates work. Ensure grep-gate catches banned strings, JSON validator catches malformed blocks, and link checker catches broken refs. Ask the user if questions arise.
 
 - [ ] 18. Final SUMMARY.md Verification
-  - [ ] 18.1 Validate `docs/SUMMARY.md` against file system
+  - [x] 18.1 Validate `docs/SUMMARY.md` against file system
     - Ensure every entry in SUMMARY.md points to an existing file
     - Ensure no orphaned content files exist outside SUMMARY.md
     - _Requirements: 1.2_
-  - [ ] 18.2 Add freshness stamps to all pages referencing versioned services
+  - [x] 18.2 Add freshness stamps to all pages referencing versioned services
     - Scan for AWS service names, SDK versions, console paths
     - Add `Last verified: YYYY-MM` where missing
     - Update `freshness-checklist.md` with all stamped pages

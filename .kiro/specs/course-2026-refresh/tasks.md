@@ -272,15 +272,15 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
     - Extract fenced `json` code blocks from all Markdown files in `docs/`
     - Run `json.loads()` on each, report failures with file path and line number
     - _Requirements: 5.4, 13.3_
-  - [ ] 16.4 Create `scripts/validate-contract.py`
+  - [x] 16.4 Create `scripts/validate-contract.py`
     - Load schema from `docs/reference/contract.md` JSON blocks
     - Scan project pages for Lambda request/response JSON
     - Validate against schema, report mismatches
     - _Requirements: 5.3, 5.4_
-  - [ ] 16.5 Create `.markdownlint.yml` configuration
+  - [x] 16.5 Create `.markdownlint.yml` configuration
     - Configure rules appropriate for GitBook-flavored Markdown
     - _Requirements: 13.5_
-  - [ ] 16.6 Create `.github/workflows/ci.yml`
+  - [x] 16.6 Create `.github/workflows/ci.yml`
     - Checkout, markdownlint, grep gate, JSON validation, link check, contract validation
     - Trigger on push to `main` and PRs targeting `main`
     - _Requirements: 13.2, 13.3, 13.4, 13.5_

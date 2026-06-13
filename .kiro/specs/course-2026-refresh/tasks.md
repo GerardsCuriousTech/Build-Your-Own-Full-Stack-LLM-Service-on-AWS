@@ -50,10 +50,10 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
   - Ask the user if questions arise.
 
 - [ ] 3. Phase 1 — Breaking Fixes (SEC Lambda SAM Rewrite)
-  - [ ] 3.1 Rewrite `docs/project-sec-lambda/README.md` module overview
+  - [x] 3.1 Rewrite `docs/project-sec-lambda/README.md` module overview
     - Update module title and description for SAM CLI deployment focus
     - _Requirements: 4.4_
-  - [ ] 3.2 Create `docs/project-sec-lambda/lambda-project-setup.md`
+  - [x] 3.2 Create `docs/project-sec-lambda/lambda-project-setup.md`
     - SAM CLI init, `template.yaml`, Python 3.12 runtime
     - Include `requests` library in deployment package/layer
     - Include custom User-Agent header for SEC EDGAR API

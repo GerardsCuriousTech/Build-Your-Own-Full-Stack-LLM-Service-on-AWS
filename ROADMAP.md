@@ -44,7 +44,7 @@ Rewrite `docs/project-sec-lambda/README.md` for a SAM CLI deployment focus. Writ
 Rewrite `docs/project-sec-lambda/lambda-error-handling.md` following the pedagogy template: try/except patterns, boto3 caller FunctionError detection, a CloudWatch log walkthrough (find log group, read an invocation), `sam logs`/`sam local invoke` for local reproduction, and a single consolidated error list. Replace every hardcoded `anthropic.claude` / `us.anthropic.claude` ID across `docs/` with a link to `reference/models.md`. Convert SEC demonstrations to date-relative phrasing and add `Capture-Dated Example` labels where outputs are shown. Consult `course-content-audit.md` per-page notes (accession-number dash-stripping, EventBridge UTC, CIK normalization) before editing.
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `3.3`, `3.4`, `3.5`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #5
 
 ---
 

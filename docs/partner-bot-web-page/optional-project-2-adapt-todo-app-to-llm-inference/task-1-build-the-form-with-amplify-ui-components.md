@@ -41,8 +41,9 @@ Reminder this is what the lambda input looks like. So you will likely need to ad
 
 ```json
 {
-  "question": "How much did Amazon invest in Anthropic in Q3 2023 and Q1 2024?",
+  "question": "What were the key investments disclosed this quarter?",
   "ticker": "AMZN",
-  "year": "2024",
+  "year": 2024,
+  "period": "Q2"
 }
 ```

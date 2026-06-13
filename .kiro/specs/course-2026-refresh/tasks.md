@@ -61,18 +61,18 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
     - Align Lambda I/O to Contract_Page schema (link to `reference/contract.md`)
     - Link to `reference/models.md` for any model references
     - _Requirements: 4.1, 4.2, 4.3, 4.6, 5.3, 2.3, 15.1_
-  - [ ] 3.3 Rewrite `docs/project-sec-lambda/lambda-error-handling.md`
+  - [x] 3.3 Rewrite `docs/project-sec-lambda/lambda-error-handling.md`
     - Follow Pedagogy_Template (Goal, Contract, Required Reading, Constraints, Acceptance Criteria, Hints)
     - Focus on error handling patterns: try/except, FunctionError detection by boto3 callers, CloudWatch log walkthrough (find log group, read an invocation)
     - Consolidate overlapping error lists into a single canonical list
     - Add `sam logs` and `sam local invoke` for local error reproduction
     - Consult `course-content-audit.md` per-page notes for this page's specific findings
     - _Requirements: 4.5, 14.4_
-  - [ ] 3.4 Replace hardcoded model IDs across all existing pages
+  - [x] 3.4 Replace hardcoded model IDs across all existing pages
     - Grep for `anthropic.claude` and `us.anthropic.claude` in `docs/`
     - Replace inline references with links to `../reference/models.md`
     - _Requirements: 2.3, 2.4_
-  - [ ] 3.5 Apply rot-proof demonstration approach to SEC modules
+  - [x] 3.5 Apply rot-proof demonstration approach to SEC modules
     - Replace absolute-dated filing instructions with date-relative phrasing
     - Add "Capture-Dated Example" labels where screenshots/outputs are shown
     - Consult `course-content-audit.md` per-page notes for each affected page's specific findings (accession-number dash-stripping, EventBridge UTC note, CIK normalization hint)

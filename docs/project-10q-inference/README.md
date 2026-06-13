@@ -27,3 +27,6 @@ Every part of this module uses **AWS CDK (Python 3.12)** for infrastructure depl
 
 - [Models](../reference/models.md) — the canonical model identifier for all Bedrock calls
 - [Lambda Contract](../reference/contract.md) — the request/response schema your Lambda must conform to
+
+---
+Last verified: 2026-06

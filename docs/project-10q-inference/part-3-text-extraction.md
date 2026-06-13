@@ -57,3 +57,6 @@ For token estimation, a simple ratio works: one token is roughly four characters
 Truncation strategy: split the text into paragraphs (double newline). Accumulate paragraphs until adding the next one would exceed the budget. This preserves document structure and avoids cutting mid-thought. If even the first paragraph exceeds the budget, fall back to sentence-level splitting.
 
 Test with filings from different companies. SEC formatting varies — some use deeply nested tables for financial statements, others use flat `<p>` tags. Your parser should handle both gracefully.
+
+---
+Last verified: 2026-06

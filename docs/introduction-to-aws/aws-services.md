@@ -25,3 +25,6 @@ EventBridge triggers actions on a schedule or in response to events. In this cou
 ### Amazon Cognito
 
 Cognito manages user sign-up, sign-in, and access control. The Partner Bot Web Page module uses Cognito to authenticate users before they can call the inference API.
+
+---
+Last verified: 2026-06

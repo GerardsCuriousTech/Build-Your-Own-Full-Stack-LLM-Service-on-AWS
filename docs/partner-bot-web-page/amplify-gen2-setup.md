@@ -79,3 +79,6 @@ Vite resolves JSON imports natively — no loader config needed.
 `npx ampx sandbox` watches your `amplify/` directory for changes and hot-deploys them. Press `Ctrl+C` to stop watching; the sandbox resources remain deployed. Run `npx ampx sandbox delete` when you want to tear them down.
 
 </details>
+
+---
+Last verified: 2026-06

@@ -117,3 +117,6 @@ const years = Array.from({ length: 5 }, (_, i) => currentYear - i);
 ```
 
 </details>
+
+---
+Last verified: 2026-06

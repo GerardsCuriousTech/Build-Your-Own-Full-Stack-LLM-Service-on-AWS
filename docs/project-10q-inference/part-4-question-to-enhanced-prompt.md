@@ -95,3 +95,6 @@ Map `period` to the fiscal quarter when searching EDGAR submissions. A company f
 For `FY` (full-year), the relevant form type is `10-K`, not `10-Q`. Handle this case explicitly in your retrieval logic.
 
 Pick a recent filing and verify the Lambda's answer against the source document. The integration test is: invoke the Lambda, read the answer, open the filing on EDGAR, and confirm the figure appears in the text.
+
+---
+Last verified: 2026-06

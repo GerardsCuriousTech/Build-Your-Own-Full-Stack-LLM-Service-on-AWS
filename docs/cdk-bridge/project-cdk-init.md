@@ -117,3 +117,6 @@ If you renamed `app.py` or need to pass environment variables, this is where you
 ### Next step
 
 Once `cdk synth` succeeds with no errors, this project is complete. The 10Q Inference module picks up from this skeleton and adds the actual Lambda and supporting resources.
+
+---
+Last verified: 2026-06

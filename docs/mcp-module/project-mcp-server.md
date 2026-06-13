@@ -62,3 +62,6 @@ The server must respond to the standard MCP lifecycle methods: `initialize`, `to
 - To run in HTTP+SSE mode: `python server.py --transport sse --port 8080`. The `mcp` SDK's CLI runner handles this flag.
 - Test your tool in isolation first with `mcp dev server.py` — this launches an interactive inspector that lets you call tools without configuring a full client.
 - Structure your project directory alongside your CDK stack or as a standalone package — either works. The server is a thin wrapper, not a large application.
+
+---
+Last verified: 2026-06

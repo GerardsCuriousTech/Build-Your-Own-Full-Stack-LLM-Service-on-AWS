@@ -28,3 +28,6 @@ The module is the midpoint deliverable of the course: everything before it build
 - Node.js LTS and npm installed
 - An AWS account with Amplify and Bedrock access enabled ([Setup: AWS Account](../reference/setup-aws-account.md))
 - Git configured with a remote repository ([GitHub Setup](../introduction-to-git-and-github/project-github-setup.md))
+
+---
+Last verified: 2026-06

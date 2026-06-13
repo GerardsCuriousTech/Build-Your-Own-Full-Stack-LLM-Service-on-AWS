@@ -37,3 +37,6 @@ Prompt context refers to the additional information or background provided to th
 #### Why is Prompt Context Important?
 
 Prompt context is crucial because it helps the LLM generate responses that are more accurate, coherent, and relevant to the user's needs. Without context, the model might produce responses that are off-topic or lack depth.
+
+---
+Last verified: 2026-06

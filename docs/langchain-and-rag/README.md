@@ -32,3 +32,6 @@ RAG addresses all three by selecting only the passages most likely to contain th
 
 - [Models](../reference/models.md) — the canonical model identifier for all Bedrock calls
 - [Lambda Contract](../reference/contract.md) — the request/response schema your pipeline must conform to
+
+---
+Last verified: 2026-06

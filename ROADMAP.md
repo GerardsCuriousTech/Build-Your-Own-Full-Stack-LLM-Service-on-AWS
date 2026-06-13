@@ -161,7 +161,7 @@ Write `docs/langchain-and-rag/README.md` (module purpose and prerequisites), `do
 Write `scripts/validate-contract.py` (load the schema from `reference/contract.md`'s JSON blocks, scan project pages for Lambda request/response JSON, validate against the schema). Add `.markdownlint.yml` (GitBook-flavored rules plus enforcement that project pages contain the six pedagogy-template headings) and promote markdownlint from non-blocking to a hard gate. Extend the already-seeded `.github/workflows/ci.yml` with the contract-validation step and an external link check (lychee), so the full gate is checkout → link/SUMMARY → markdownlint → grep-gate → JSON validation → contract validation. This is the final, authoritative quality gate.
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `16.4`, `16.5`, `16.6`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #18
 
 ---
 

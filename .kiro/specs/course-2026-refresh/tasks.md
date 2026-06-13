@@ -200,15 +200,15 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
     - _Requirements: 9.1, 9.4, 16.1_
 
 - [ ] 12. Phase 9 — MCP Module
-  - [ ] 12.1 Write `docs/mcp-module/README.md` module overview
+  - [x] 12.1 Write `docs/mcp-module/README.md` module overview
     - Explain MCP module purpose and prerequisites
     - _Requirements: 10.1_
-  - [ ] 12.2 Write `docs/mcp-module/mcp-concepts.md` concepts page
+  - [x] 12.2 Write `docs/mcp-module/mcp-concepts.md` concepts page
     - MCP fundamentals: tools, resources, prompts
     - How MCP relates to Lambda functions built earlier
     - Include live demo section: students connect an MCP client (e.g., Claude) to the course site's MCP endpoint (`https://llm-aws.course.gspivey.com/~gitbook/mcp`) and query the course — experiencing MCP before building their own server
     - _Requirements: 10.1, 10.2_
-  - [ ] 12.3 Write `docs/mcp-module/project-mcp-server.md` project page
+  - [x] 12.3 Write `docs/mcp-module/project-mcp-server.md` project page
     - Follow Pedagogy_Template
     - Guide through building MCP server wrapping existing Lambda
     - _Requirements: 10.2, 10.3_

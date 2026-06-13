@@ -50,8 +50,8 @@
 ## Full-Stack Integration
 
 * [Partner Bot Web Page](partner-bot-web-page/README.md)
-  * [Amplify React Quickstart](partner-bot-web-page/optional-project-1-amplify-react-quickstart.md)
-  * [Amplify Concepts: Functions & UI](partner-bot-web-page/amplify-concepts-amplify-functions-and-amplify-ui.md)
+  * [Amplify Gen 2 Setup](partner-bot-web-page/amplify-gen2-setup.md)
+  * [Build the Chat Form](partner-bot-web-page/build-the-chat-form.md)
   * [Adapt the App to LLM Inference](partner-bot-web-page/optional-project-2-adapt-todo-app-to-llm-inference/README.md)
     * [Task 1: Build the Form with Amplify UI](partner-bot-web-page/optional-project-2-adapt-todo-app-to-llm-inference/task-1-build-the-form-with-amplify-ui-components.md)
     * [Task 2: Expose Lambda behind API Gateway](partner-bot-web-page/optional-project-2-adapt-todo-app-to-llm-inference/task-2-exposing-an-existing-lambda-behind-api-gateway-for-an-amplify-frontend.md)

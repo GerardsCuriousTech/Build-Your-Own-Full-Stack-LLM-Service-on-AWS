@@ -26,7 +26,7 @@ Create `.gitbook.yaml` (`root: docs/`). Move every existing course module folder
 Write `docs/reference/models.md` — the single source of truth for the model identifier: Claude Sonnet 4.5 on Bedrock via a Cross-Region Inference Profile, the profile ARN pattern, and the rule that every other page links here instead of embedding an ID. Write `docs/reference/contract.md` — the Lambda request schema (`question` string, `ticker` string, `year` integer, `period` enum `Q1`/`Q2`/`Q3`/`Q4`/`FY`) and response schema (`answer` string, `meta` object), with one valid JSON example and one invalid example plus its expected validation error. These are dependency-free leaf pages every later module links to.
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `6.1`, `6.2`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #3
 
 ---
 

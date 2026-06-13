@@ -107,12 +107,12 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
   - Ensure no banned strings remain in `docs/`. Run grep for AI artifacts, emoji, "optional" headings, and non-3.12 Python versions. Ask the user if questions arise.
 
 - [ ] 6. Phase 3 — Canonical Contract & Models Pages
-  - [ ] 6.1 Write `docs/reference/models.md`
+  - [x] 6.1 Write `docs/reference/models.md`
     - Define canonical model: Claude Sonnet 4.5 on Bedrock
     - Document Cross_Region_Inference_Profile configuration
     - Include ARN pattern and usage instructions
     - _Requirements: 2.1, 2.2_
-  - [ ] 6.2 Write `docs/reference/contract.md`
+  - [x] 6.2 Write `docs/reference/contract.md`
     - Define Lambda request schema: `question` (string), `ticker` (string), `year` (integer), `period` (enum: Q1, Q2, Q3, Q4, FY)
     - Define Lambda response schema: `answer` (string), `meta` (object)
     - Include one valid JSON example and one invalid example with the expected validation error

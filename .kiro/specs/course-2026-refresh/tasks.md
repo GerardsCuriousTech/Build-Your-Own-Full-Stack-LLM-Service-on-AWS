@@ -147,17 +147,17 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
     - _Requirements: 7.3, 7.4, 16.1_
 
 - [ ] 9. Phase 7 — 10Q Inference CDK Rewrite
-  - [ ] 9.1 Rewrite `docs/project-10q-inference/README.md` for CDK deployment
+  - [x] 9.1 Rewrite `docs/project-10q-inference/README.md` for CDK deployment
     - Update module overview to reflect CDK-based deployment
     - _Requirements: 8.1_
-  - [ ] 9.2 Rewrite `docs/project-10q-inference/part-1-inference-test.md`
+  - [x] 9.2 Rewrite `docs/project-10q-inference/part-1-inference-test.md`
     - Follow Pedagogy_Template
     - Use CDK for deployment
     - Link to Models_Page and Contract_Page
     - Fold content from the old `sample-prompt-without-context.md` into this page, then delete `docs/project-10q-inference/project-part-1-inference-test/sample-prompt-without-context.md`
     - Consult `course-content-audit.md` per-page notes for specific findings on this page
     - _Requirements: 8.1, 8.3, 8.4_
-  - [ ] 9.3 Rewrite `docs/project-10q-inference/part-2-inference-with-context.md`
+  - [x] 9.3 Rewrite `docs/project-10q-inference/part-2-inference-with-context.md`
     - Follow Pedagogy_Template
     - Use date-relative demonstration approach for 10-Q filing selection
     - Fold content from the old `sample-prompt-with-context.md` into this page, then delete `docs/project-10q-inference/project-part-2-inference-with-context/sample-prompt-with-context.md`

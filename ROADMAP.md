@@ -107,7 +107,7 @@ Write `docs/cdk-bridge/README.md` (module purpose: the SAM → CDK transition), 
 Rewrite `docs/project-10q-inference/README.md` for CDK-based deployment. Write `part-1-inference-test.md` (fold in the old `project-part-1-inference-test/sample-prompt-without-context.md`) and `part-2-inference-with-context.md` (date-relative 10-Q filing selection; fold in the old `project-part-2-inference-with-context/sample-prompt-with-context.md`). Follow the pedagogy template; link to `reference/models.md` and `reference/contract.md`. Consult `course-content-audit.md` per-page notes. These old nested pages are the **current** `docs/SUMMARY.md` targets — repoint SUMMARY to the new flat pages and delete the now-empty `project-part-1-inference-test/` and `project-part-2-inference-with-context/` directories.
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `9.1`, `9.2`, `9.3`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #12
 
 ---
 

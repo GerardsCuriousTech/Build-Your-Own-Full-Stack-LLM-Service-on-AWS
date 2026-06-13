@@ -89,7 +89,7 @@ Update existing project pages to reference `reference/contract.md` instead of em
 Write `.grep-gate-rules.yml` defining the banned-pattern rules (hardcoded model IDs allowed only in `reference/models.md`; banned everywhere: `optional` headings, AI-chat artifacts, emoji, non-3.12 Python, CRA references, chatbot phrases). Write `scripts/grep-gate.sh` that reads the rules, scans `docs/`, and exits non-zero with `file:line` plus the rule name on any match — use `grep -P` for the emoji range, anchor the CRA pattern with `\bCRA\b`, and catch any 3.x Python that is not 3.12. Write `scripts/validate-json-blocks.py` that parses every fenced `json` block in `docs/` and reports `file:line` on failure. Wire both into the already-seeded `.github/workflows/ci.yml` as steps (alongside the existing link/SUMMARY gate) so they run on every PR.
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `16.1`, `16.2`, `16.3`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #10
 
 ---
 

@@ -71,7 +71,7 @@ Write `docs/reference/setup-aws-account.md` (account creation, IAM user setup, C
 Expand the GitHub setup page to cover repository creation, branch protection, and commit conventions. Move the Python virtual-environment setup instructions into `docs/introduction-to-python/python-install.md` and remove any standalone venv reference page. Write `docs/reference/aws-services.md` trimmed to only the AWS services the course projects actually use; add a freshness stamp.
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `15.4`, `15.5`, `15.6`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #8
 
 ---
 

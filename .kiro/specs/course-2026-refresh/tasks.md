@@ -243,14 +243,14 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
   - [x] 15.3 Write `docs/reference/conventions.md`
     - Course naming conventions, glossary of terms
     - _Requirements: 12.3_
-  - [ ] 15.4 Expand GitHub setup page
+  - [x] 15.4 Expand GitHub setup page
     - Cover repository creation, branch protection, commit conventions
     - _Requirements: 12.4_
-  - [ ] 15.5 Reposition Python virtual environment setup into Python intro module
+  - [x] 15.5 Reposition Python virtual environment setup into Python intro module
     - Ensure venv instructions are within `docs/introduction-to-python/python-install.md`
     - Remove any standalone venv reference page if it exists
     - _Requirements: 12.5_
-  - [ ] 15.6 Write `docs/reference/aws-services.md`
+  - [x] 15.6 Write `docs/reference/aws-services.md`
     - Trim to cover only services actively used in course projects
     - Add freshness stamp
     - _Requirements: 12.6, 13.1_

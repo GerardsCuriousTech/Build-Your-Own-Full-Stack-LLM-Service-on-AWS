@@ -52,10 +52,8 @@
 * [Partner Bot Web Page](partner-bot-web-page/README.md)
   * [Amplify Gen 2 Setup](partner-bot-web-page/amplify-gen2-setup.md)
   * [Build the Chat Form](partner-bot-web-page/build-the-chat-form.md)
-  * [Adapt the App to LLM Inference](partner-bot-web-page/optional-project-2-adapt-todo-app-to-llm-inference/README.md)
-    * [Task 1: Build the Form with Amplify UI](partner-bot-web-page/optional-project-2-adapt-todo-app-to-llm-inference/task-1-build-the-form-with-amplify-ui-components.md)
-    * [Task 2: Expose Lambda behind API Gateway](partner-bot-web-page/optional-project-2-adapt-todo-app-to-llm-inference/task-2-exposing-an-existing-lambda-behind-api-gateway-for-an-amplify-frontend.md)
-    * [Task 3: Edge Lambda with Cognito-Protected API](partner-bot-web-page/optional-project-2-adapt-todo-app-to-llm-inference/task-3-edge-lambda-pattern-with-cognito-protected-api-gateway.md)
+  * [Connect to Lambda via API Gateway](partner-bot-web-page/connect-to-lambda.md)
+  * [Authentication with Cognito](partner-bot-web-page/authentication-with-cognito.md)
 
 ## Advanced Modules
 

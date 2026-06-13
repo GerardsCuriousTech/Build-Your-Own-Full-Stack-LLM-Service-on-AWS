@@ -116,7 +116,7 @@ Rewrite `docs/project-10q-inference/README.md` for CDK-based deployment. Write `
 Write `docs/project-10q-inference/part-3-text-extraction.md` (extracting text from SEC filing documents — new content) and `docs/project-10q-inference/part-4-question-to-enhanced-prompt.md` with Lambda I/O aligned to `reference/contract.md`. `part-4` supersedes the existing `project-part-3-question-to-enhanced-prompt.md` — migrate its content, repoint `docs/SUMMARY.md` to the new `part-3`/`part-4` entries, and delete the old page. Both follow the pedagogy template and use CDK for deployment.
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `9.4`, `9.5`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #13
 
 ---
 

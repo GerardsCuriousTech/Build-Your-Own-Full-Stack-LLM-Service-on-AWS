@@ -163,11 +163,11 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
     - Fold content from the old `sample-prompt-with-context.md` into this page, then delete `docs/project-10q-inference/project-part-2-inference-with-context/sample-prompt-with-context.md`
     - Consult `course-content-audit.md` per-page notes for specific findings on this page
     - _Requirements: 3.1, 8.1, 8.3_
-  - [ ] 9.4 Write `docs/project-10q-inference/part-3-text-extraction.md`
+  - [x] 9.4 Write `docs/project-10q-inference/part-3-text-extraction.md`
     - New section covering SEC filing text extraction
     - Follow Pedagogy_Template
     - _Requirements: 8.2, 8.3_
-  - [ ] 9.5 Rewrite `docs/project-10q-inference/part-4-question-to-enhanced-prompt.md`
+  - [x] 9.5 Rewrite `docs/project-10q-inference/part-4-question-to-enhanced-prompt.md`
     - Follow Pedagogy_Template
     - Align Lambda I/O to contract schema
     - _Requirements: 8.3, 8.4_

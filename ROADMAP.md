@@ -62,7 +62,7 @@ Across all of `docs/`: remove AI-chat artifacts (`Sure!`, `Great question!`, `As
 Write `docs/reference/setup-aws-account.md` (account creation, IAM user setup, CLI configuration; freshness stamp), `docs/reference/setup-bedrock-access.md` (Bedrock model access enablement; link to `reference/models.md`; freshness stamp), and `docs/reference/conventions.md` (course naming conventions and a glossary of terms).
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `15.1`, `15.2`, `15.3`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #7
 
 ---
 

@@ -231,16 +231,16 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
   - Ensure MCP and RAG modules follow pedagogy template, are positioned correctly in SUMMARY.md after 10Q Inference, and reference prior Lambda work. Ask the user if questions arise.
 
 - [ ] 15. Phase 11 — Reference & Setup Pages
-  - [ ] 15.1 Write `docs/reference/setup-aws-account.md`
+  - [x] 15.1 Write `docs/reference/setup-aws-account.md`
     - AWS account creation, IAM user setup, CLI configuration
     - Add freshness stamp
     - _Requirements: 12.1, 13.1_
-  - [ ] 15.2 Write `docs/reference/setup-bedrock-access.md`
+  - [x] 15.2 Write `docs/reference/setup-bedrock-access.md`
     - Bedrock model access enablement steps
     - Link to Models_Page for canonical model
     - Add freshness stamp
     - _Requirements: 12.2, 13.1_
-  - [ ] 15.3 Write `docs/reference/conventions.md`
+  - [x] 15.3 Write `docs/reference/conventions.md`
     - Course naming conventions, glossary of terms
     - _Requirements: 12.3_
   - [ ] 15.4 Expand GitHub setup page

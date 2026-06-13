@@ -1,24 +1,21 @@
 # Project Part 1: Inference Test
 
-Invoke the Bedrock using Claude 3 Sonnet.
+Invoke Bedrock using the [canonical course model](../../reference/models.md).
 
 * [Bedrock API Reference](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html)
 * [InvokeModel API Reference](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html)
 * [Invoke Model Guide](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-invoke.html#inference-example-invoke)
-* [Python Invoke Model Example](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-invoke.html#inference-example-invoke)
 
 Use the Python Boto3 API and test asking the model a range of questions.
 
-For example
+For example:
 
 * Can you explain a solar eclipse?
-* Can you write explain how to write a python module and give sample code?
-* Can you explain what the SEC Edgar library is for?
+* Can you write a Python module and give sample code?
+* Can you explain what the SEC EDGAR library is for?
 
-After you get a feel for asking questions and parsing responses. Find a companies latest 10-Q filing. The current date as of writing this is August 2024.  For example AMZN filed their latest [10-Q ](https://www.sec.gov/ix?doc=/Archives/edgar/data/1018724/000101872424000130/amzn-20240630.htm)as of writing this on April 2 2024. AMZN is used as an example however pick a different company so you can explore the power of LLM context for yourself.\
-\
-Within that document find a fact that the LLM is unlikely to know the answer to. For example in the "Management's Discussion and Analysis if Financial Condition and Results of Operations"&#x20;
+After you get a feel for asking questions and parsing responses, find a company's most recent 10-Q filing on SEC EDGAR. Pick any publicly traded company and locate its latest quarterly filing — the one filed within the last few months. Use the EDGAR API skills from the previous project to retrieve it.
 
-* How much did Amazon invest in Anthropic in Q3 2023 and Q1 2024?
+Within that document, find a fact that the LLM is unlikely to know the answer to. Model training data has a cutoff — facts from very recent filings are beyond that cutoff. Look in sections like "Management's Discussion and Analysis of Financial Condition and Results of Operations" for specific dollar figures, investment amounts, or operational metrics disclosed in the filing.
 
-This is an example question. Find 1-3 questions of your own the ask the LLM and take note of how it responds. Save the questions and responses.&#x20;
+Compose 1-3 questions of your own, ask the LLM, and take note of how it responds. Save both the questions and responses — you will use them in Part 2.

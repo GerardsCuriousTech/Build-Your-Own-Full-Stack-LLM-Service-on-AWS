@@ -17,6 +17,12 @@ The URL for the document will follow this format
 
 `https://www.sec.gov/Archives/edgar/data/{CIK}/{accessionNumber}/{primaryDocument}`
 
-#### Example:
+Note: accession numbers in the SEC API response contain dashes (e.g., `0000320193-24-000069`), but the URL path uses the dash-stripped form (e.g., `000032019324000069`). Strip the dashes when constructing the URL.
 
-`curl -A "<your orginaztion> <your name> <your email>" -v` [`https://www.sec.gov/Archives/edgar/data/320193/000032019324000069/aapl-20240330.htm`](https://www.sec.gov/Archives/edgar/data/320193/000032019324000069/aapl-20240330.htm)
+#### Example
+
+> **Capture-Dated Example** — results shown may differ from your own.
+
+`curl -A "<your organization> <your name> <your email>" -v https://www.sec.gov/Archives/edgar/data/320193/000032019324000069/aapl-20240330.htm`
+
+Replace the CIK, accession number, and document name with values from your own submission lookup. Use a recent filing from any company you choose.

@@ -22,9 +22,12 @@ mkdir -p "$WORKDIR" && cd "$WORKDIR"
 git clone https://github.com/GerardsCuriousTech/Build-Your-Own-Full-Stack-LLM-Service-on-AWS.git
 cd Build-Your-Own-Full-Stack-LLM-Service-on-AWS
 git checkout development
+gh auth setup-git   # point git's HTTPS credential at the session token agent-router provides
 ```
 
-The agent MUST read `AGENTS.md` and `CLAUDE.md` before writing any content.
+The agent MUST read `AGENTS.md` and `CLAUDE.md` before writing any content. The session's
+GitHub token is provisioned by agent-router; the agent MUST NOT add, replace, or edit Git
+credentials beyond the `gh auth setup-git` above.
 
 ---
 
@@ -74,9 +77,10 @@ by executing `gh run view`, `gh run watch`, or `gh run list` in a loop. Agent-ro
 delivers CI results as `check_run` events. When a result arrives, the agent MUST act: fix
 failures and push, or proceed if green.
 
-Until ROADMAP item 17 lands, `.github/workflows/ci.yml` may not exist yet; in that case the
-local validators from §3 are the gate and the agent proceeds once they pass and the PR is
-mergeable.
+`.github/workflows/ci.yml` runs on every PR into `development`, so every PR produces a
+`check_run` — today it hard-gates `docs/SUMMARY.md`/internal-link resolution and runs
+markdownlint non-blocking; later items add the grep-gate, JSON, and contract checks. The
+agent MUST fix a red required check before merge and MUST NOT merge a PR with one failing.
 
 ---
 
@@ -114,8 +118,13 @@ Once CI (or the local validators, pre-item-17) is green and the feature branch c
 - **Missing toolchain.** If a required tool (`gh`, `python`, `node`/`npx`) is absent, the
   agent MUST stop and report the missing dependency in a PR comment or session message. The
   agent MUST NOT bootstrap a toolchain via conda, snap, or any user-space package manager.
-- **Auth failures.** If `git push` or `gh pr create` fails with an authentication error,
-  the agent MUST stop and report it. The agent MUST NOT attempt to fix credentials.
+- **Auth failures — stop on the first one; never route around them.** If `git push`,
+  `gh pr create`, or any GitHub write fails with a `401`/`403`/permission error, the agent
+  MUST stop on the **first** failure and report it. The agent MUST NOT retry with a
+  different token, account, or remote; MUST NOT edit Git credentials or credential helpers;
+  and MUST NOT attempt any alternate write path (the GitHub REST contents/git-data API,
+  `gh api` tree/commit creation, a fork, etc.) to get the change in. The session token is
+  provisioned by agent-router and a denial is authoritative — halt, do not work around it.
 - **CI divergence.** If the agent cannot converge after a reasonable number of CI cycles, it
   MUST post a PR comment summarizing the blocker and stop.
 - **No root.** The agent MUST NOT run `sudo`. If a task requires root, the agent MUST report

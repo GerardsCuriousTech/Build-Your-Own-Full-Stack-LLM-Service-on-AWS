@@ -87,9 +87,11 @@ every module after it uses CDK (Python 3.12).
 
 ## Build & Validate
 
-There is no compiler. Before considering work done, run whichever validators exist on the
-branch — they are added incrementally by ROADMAP item 9 (grep-gate, JSON) and item 17
-(contract, markdownlint, link check, `ci.yml`):
+There is no compiler. A minimal `.github/workflows/ci.yml` runs on every PR into
+`development` (it hard-gates `docs/SUMMARY.md`/internal-link resolution and runs markdownlint
+non-blocking); item 9 extends it with the grep-gate + JSON validators and item 17 with
+contract validation. Before considering work done, run whichever local validators exist on
+the branch:
 
 ```bash
 # Run only those that exist yet:
@@ -106,8 +108,9 @@ Always, regardless of which scripts exist:
    headings, non-3.12 Python, CRA, AI-chat phrases).
 3. **JSON blocks parse** and Lambda examples conform to the contract.
 
-`.github/workflows/ci.yml` is the **authoritative** gate once item 17 lands. After you push,
-agent-router delivers results as `check_run` events — do not poll CI in a loop.
+`.github/workflows/ci.yml` runs on every PR into `development` and is the authoritative gate
+(it grows stricter at items 9 and 17). After you push, agent-router delivers results as
+`check_run` events — do not poll CI in a loop.
 
 ## DO / DON'T
 
@@ -128,6 +131,7 @@ agent-router delivers results as `check_run` events — do not poll CI in a loop
 - Don't put complete solution code on a project page.
 - Don't start a second ROADMAP item in the same session.
 - Don't run `sudo`. If a task needs root or a missing toolchain, stop and report.
+- **Don't work around an auth/permission failure.** A `401`/`403` on push or PR creation means stop and report — never switch tokens/accounts/remotes, edit credentials, or use the REST API to force the write.
 
 ## Domain Knowledge
 

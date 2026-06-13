@@ -80,7 +80,7 @@ Expand the GitHub setup page to cover repository creation, branch protection, an
 Update existing project pages to reference `reference/contract.md` instead of embedding inline Lambda I/O definitions, and ensure their JSON examples conform to the schema. Finalize the SAM `template.yaml` examples in the Lambda module (Python 3.12 runtime, JSON blocks parse, event/response aligned to the contract). Add `Last verified: YYYY-MM` freshness stamps to the SEC Lambda pages.
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `6.3`, `7.1`, `7.2`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #9
 
 ---
 

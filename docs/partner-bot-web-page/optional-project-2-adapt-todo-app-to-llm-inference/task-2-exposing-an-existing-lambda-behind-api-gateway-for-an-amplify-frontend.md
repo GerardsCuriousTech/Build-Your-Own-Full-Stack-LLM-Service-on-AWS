@@ -12,7 +12,7 @@
 
 * **Existing Lambda:** Deployed in the target AWS account and region.
 * **Amplify app:** Local dev URL (e.g., http://localhost:5173) and hosted domain (e.g., https://main.xxxxx.amplifyapp.com).
-* **Schema clarity:** Input JSON you plan to send (partner, year, period, question) and output shape (answer, meta).
+* **Schema clarity:** Input JSON conforming to the [Lambda Contract](../../reference/contract.md) (`ticker`, `year`, `period`, `question`) and output shape (`answer`, `meta`).
 
 ***
 
@@ -99,8 +99,8 @@ ENDPOINT="https://abc123.execute-api.us-east-1.amazonaws.com/inference"
 curl -i -X POST "$ENDPOINT" \
   -H "Content-Type: application/json" \
   -d '{
-    "partner":"Contoso",
-    "year":2023,
+    "ticker":"MSFT",
+    "year":2024,
     "period":"Q2",
     "question":"Summarize revenue growth drivers."
   }'

@@ -1,0 +1,44 @@
+# .markdownlint.yml — GitBook-flavored rules for course content.
+# Promotes markdownlint to a hard gate. Rules that conflict with GitBook syntax
+# or existing content conventions are disabled; the remaining rules catch
+# regressions in new content without requiring a bulk reformat of legacy pages.
+
+# Disabled — incompatible with GitBook syntax or existing content style
+MD001: false          # Heading increment — GitBook hint blocks use ### inside ##
+MD004: false          # Unordered list style — existing content mixes * and -
+MD013: false          # Line length — GitBook content wraps naturally
+MD024: false          # Duplicate headings — repeated across sections is intentional
+MD025: false          # Single top-level heading — GitBook pages use front-matter titles
+MD029: false          # Ordered list prefix — existing content uses 1/2/3 style
+MD030: false          # Spaces after list markers — existing content varies
+MD031: false          # Blanks around fences — GitBook hint blocks don't require them
+MD033: false          # Inline HTML — GitBook hints/tabs use HTML
+MD034: false          # Bare URLs — some existing pages use them intentionally
+MD036: false          # Emphasis as heading — used for visual grouping in some pages
+MD040: false          # Fenced code language — some shell output blocks omit language
+MD041: false          # First line heading — GitBook pages may start with description
+MD049: false          # Emphasis style — existing content mixes * and _
+MD060: false          # Table column style — existing tables use compact pipe style
+
+# Active rules — enforce on all docs/**/*.md going forward
+MD003:
+  style: "atx"       # ATX-style headings only
+MD007:
+  indent: 2          # List indentation: 2 spaces
+MD009: true           # No trailing spaces
+MD010: true           # No hard tabs
+MD012: false          # Multiple blank lines — existing content has legacy gaps
+MD022:
+  lines_above: -1    # Don't enforce blank lines above headings
+  lines_below: -1    # Don't enforce blank lines below headings
+MD023: true           # Headings must start at beginning of line
+MD026: true           # No trailing punctuation in headings
+MD032: true           # Blanks around lists
+MD037: true           # No spaces inside emphasis markers
+MD038: true           # No spaces inside code spans
+MD039: false          # Spaces inside link text — legacy content has this pattern
+MD046:
+  style: "fenced"    # Code blocks must be fenced (not indented)
+MD047: true           # Files should end with a single newline
+MD050:
+  style: "asterisk"  # Strong style: **bold**

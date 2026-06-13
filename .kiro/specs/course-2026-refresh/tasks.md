@@ -256,11 +256,11 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
     - _Requirements: 12.6, 13.1_
 
 - [ ] 16. Phase 12 — CI Pipeline
-  - [ ] 16.1 Create `.grep-gate-rules.yml` at repo root
+  - [x] 16.1 Create `.grep-gate-rules.yml` at repo root
     - Define all banned pattern rules per design document
     - Include `allow_in` exceptions for models.md
     - _Requirements: 2.4, 6.3, 14.2, 15.2_
-  - [ ] 16.2 Create `scripts/grep-gate.sh`
+  - [x] 16.2 Create `scripts/grep-gate.sh`
     - Read rules from `.grep-gate-rules.yml`
     - Scan `docs/` for banned patterns
     - Exit non-zero on match, printing file:line and rule name
@@ -268,7 +268,7 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
     - Anchor the CRA pattern with word boundaries (`\bCRA\b`) to avoid false positives on substrings like "sCRAtch"
     - Python version rule must catch ANY 3.x that isn't 3.12 (not just a hardcoded list)
     - _Requirements: 2.4, 13.4_
-  - [ ] 16.3 Create `scripts/validate-json-blocks.py`
+  - [x] 16.3 Create `scripts/validate-json-blocks.py`
     - Extract fenced `json` code blocks from all Markdown files in `docs/`
     - Run `json.loads()` on each, report failures with file path and line number
     - _Requirements: 5.4, 13.3_

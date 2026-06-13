@@ -35,7 +35,7 @@ Write `docs/reference/models.md` — the single source of truth for the model id
 Rewrite `docs/project-sec-lambda/README.md` for a SAM CLI deployment focus. Write `docs/project-sec-lambda/lambda-project-setup.md`: `sam init`, `template.yaml`, Python 3.12 runtime, the `requests` library included in the deployment package/layer (not assumed built-in), a custom User-Agent header on all SEC EDGAR requests, no comments inside JSON blocks, Lambda I/O linked to `reference/contract.md`, and model references linked to `reference/models.md`. Follow the pedagogy template; no complete solution code.
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `3.1`, `3.2`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #4
 
 ---
 

@@ -214,14 +214,14 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
     - _Requirements: 10.2, 10.3_
 
 - [ ] 13. Phase 10 — LangChain & RAG Module
-  - [ ] 13.1 Write `docs/langchain-and-rag/README.md` module overview
+  - [x] 13.1 Write `docs/langchain-and-rag/README.md` module overview
     - Explain RAG module purpose and prerequisites
     - _Requirements: 11.1_
-  - [ ] 13.2 Write `docs/langchain-and-rag/rag-concepts.md` concepts page
+  - [x] 13.2 Write `docs/langchain-and-rag/rag-concepts.md` concepts page
     - RAG fundamentals: chunking, embedding, vector stores, retrieval
     - LangChain overview
     - _Requirements: 11.1_
-  - [ ] 13.3 Write `docs/langchain-and-rag/project-rag-pipeline.md` project page
+  - [x] 13.3 Write `docs/langchain-and-rag/project-rag-pipeline.md` project page
     - Follow Pedagogy_Template
     - Guide through implementing chunked and embedded retrieval pipeline
     - Builds on 10Q Inference data pipeline

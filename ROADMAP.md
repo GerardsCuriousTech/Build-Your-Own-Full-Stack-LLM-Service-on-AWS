@@ -152,7 +152,7 @@ Write `docs/mcp-module/README.md` (module purpose and prerequisites), `docs/mcp-
 Write `docs/langchain-and-rag/README.md` (module purpose and prerequisites), `docs/langchain-and-rag/rag-concepts.md` (chunking, embedding, vector stores, retrieval; LangChain overview), and `docs/langchain-and-rag/project-rag-pipeline.md` (pedagogy template; a chunked-and-embedded retrieval pipeline that builds on the 10Q Inference data flow).
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `13.1`, `13.2`, `13.3`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #17
 
 ---
 

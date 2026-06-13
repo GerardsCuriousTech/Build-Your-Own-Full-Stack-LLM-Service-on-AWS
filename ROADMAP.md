@@ -134,7 +134,7 @@ Rewrite `docs/partner-bot-web-page/README.md` with the title "Partner Bot Web Pa
 Write `docs/partner-bot-web-page/connect-to-lambda.md` (API Gateway integration with the existing Lambda; reference `reference/contract.md` for request/response format) and `docs/partner-bot-web-page/authentication-with-cognito.md` (Cognito auth via Amplify Gen 2). Migrate from the existing `optional-project-2-adapt-todo-app-to-llm-inference/` pages — preserve Task 3's production-hardening reference material per `course-content-audit.md`. Repoint `docs/SUMMARY.md` to the new pages and delete the old `optional-project-*` files once their content is migrated. Both follow the pedagogy template.
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `11.4`, `11.5`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #15
 
 ---
 

@@ -24,7 +24,7 @@ In order to make use of data on the internet we first need to parse our source. 
        </html>
        ```
 
-       AI-generated code. Review and use carefully. [More info on FAQ](https://www.bing.com/new#faq).
+
    * **Parsing**: Browsers automatically parse HTML to render web pages.
 2. **XML (Extensible Markup Language)**:
    * **Purpose**: XML is used for structuring and organizing data. It’s extensible because you can define your own tags.
@@ -45,7 +45,7 @@ In order to make use of data on the internet we first need to parse our source. 
        </friends>
        ```
 
-       AI-generated code. Review and use carefully. [More info on FAQ](https://www.bing.com/new#faq).
+
    * **Parsing**: You can use libraries (e.g., **`xml.etree.ElementTree`** in Python) to parse XML data.
 3. **JSON (JavaScript Object Notation)**:
    * **Purpose**: JSON is widely used for data interchange between systems. It’s lightweight and easy to read.
@@ -62,12 +62,12 @@ In order to make use of data on the internet we first need to parse our source. 
              "profession": "Full Stack Web Developer",
              "hobby": "Fitness"
            },
-           // More friend records...
+           { "name": "..." }
          ]
        }
        ```
 
-       AI-generated code. Review and use carefully. [More info on FAQ](https://www.bing.com/new#faq).
+
    * **Parsing**: Most programming languages have built-in support for parsing JSON (e.g., **`json`** module in Python).
 4. **CSV (Comma-separated Values)**:
    * **Purpose**: CSV is used for representing tabular data (rows and columns). It’s commonly used in spreadsheets and databases.

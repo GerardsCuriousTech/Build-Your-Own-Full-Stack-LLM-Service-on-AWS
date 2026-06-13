@@ -1,4 +1,4 @@
-# Optional Project 1: Amplify React quickstart
+# Amplify React Quickstart
 
 You’ll build the starter app using the official quickstart, so everyone begins with a consistent, working baseline.
 

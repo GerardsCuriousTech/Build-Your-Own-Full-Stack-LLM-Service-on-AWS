@@ -61,4 +61,4 @@ from mypackage.subpackage import module3
 module3.my_function()
 ```
 
-Remember, organizing your code into packages and modules not only helps keep your codebase clean and manageable, but also makes it easier to reuse your code across different projects. Happy coding! 🚀
+Organizing your code into packages and modules keeps your codebase clean, manageable, and easier to reuse across different projects.

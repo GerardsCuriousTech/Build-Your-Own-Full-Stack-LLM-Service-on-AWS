@@ -38,4 +38,4 @@ Now that you have Python installed, let's create a simple program that prints "H
 6. **Output**:
    * If everything is fine, you'll see the message "Hello, World!" displayed on the screen.
 
-Remember, writing "Hello, World!" is just the beginning. Python has a vast ecosystem of libraries and frameworks for various purposes, including web development, data analysis, machine learning, and more. Enjoy your Python journey! 😊🐍
+Python has a vast ecosystem of libraries and frameworks for web development, data analysis, machine learning, and more. The rest of this course builds on these fundamentals.

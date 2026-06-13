@@ -53,7 +53,7 @@ Rewrite `docs/project-sec-lambda/lambda-error-handling.md` following the pedagog
 Across all of `docs/`: remove AI-chat artifacts (`Sure!`, `Great question!`, `As an AI`, `I'd be happy to`, `Let me explain`) and rewrite affected passages in direct voice; strip all emoji; remove "optional" from the front-end module title and headings (use `(advanced — skim)` for non-essential asides); consolidate duplicated instructional content into a single canonical page and link from the others; fix audit-identified typos; and standardize all Python references to 3.12.
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `4.1`, `4.2`, `4.3`, `4.4`, `4.5`, `4.6`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #6
 
 ---
 

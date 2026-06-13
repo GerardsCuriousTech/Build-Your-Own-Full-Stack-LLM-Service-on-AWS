@@ -10,8 +10,6 @@ The U.S. Securities and Exchange Commission (SEC) plays a crucial role in the Un
 
 The SEC was established in response to the stock market crash of 1929 and the subsequent Great Depression. [It enforces federal securities laws and regulates securities exchanges, brokers, and dealers](https://www.investor.gov/introduction-investing/investing-basics/role-sec).
 
-Is there a specific aspect of the SEC’s work you’re interested in learning more about?
-
 #### Quarterly and Annual Company Reports&#x20;
 
 #### **Form 10-K**

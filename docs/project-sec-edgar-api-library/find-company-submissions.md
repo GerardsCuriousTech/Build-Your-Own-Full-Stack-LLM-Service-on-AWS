@@ -90,8 +90,8 @@ Now we get a response. Lots of content is stripped out but the structure was lef
          "filmNumber":[],
          "items":[],
          "size":[],
-         "isXRBL":[],
-         "isInlineXRBL":[],
+         "isXBRL":[],
+         "isInlineXBRL":[],
          "primaryDocument":[],
          "primaryDocumentDescription":[]
       },

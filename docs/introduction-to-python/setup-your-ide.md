@@ -11,7 +11,7 @@ description: Setting up your Integrated Development Environment
       1. [Python Plugin](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
       2. [Getting Started with Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial)<br>
 
-**If your using Window I recommend Installing Windows Subsystem for Linux (WSL):**
+**If you're using Windows, install Windows Subsystem for Linux (WSL):**
 
 1. [Install WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) (not the original WSL)
 2. [Install a Linux Distribution from Windows Market Place](https://apps.microsoft.com/detail/9pn20msr04dw?hl=en-US\&gl=US)

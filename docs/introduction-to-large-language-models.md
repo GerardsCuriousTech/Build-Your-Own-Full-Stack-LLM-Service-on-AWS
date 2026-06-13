@@ -18,7 +18,7 @@ Large Language Models are computationally intensive typically requiring GPU offl
 \
 The main takeaway is while there are some people experimenting running LLMs themselves the infrastructure required to make use of them at scale lends itself well to cloud computing.\
 \
-For this course we are using AWS's Bedrock Service which hosts a set of LLM models. On that platform we will use [Anthropics Claude model](https://www.anthropic.com/claude). Using Claude through Bedrock makes it easier to integrate with other AWS services.&#x20;
+For this course we are using AWS's Bedrock Service which hosts a set of LLM models. On that platform we will use [Anthropic's Claude model](https://www.anthropic.com/claude). Using Claude through Bedrock makes it easier to integrate with other AWS services.&#x20;
 
 ### LLM Prompt Context
 

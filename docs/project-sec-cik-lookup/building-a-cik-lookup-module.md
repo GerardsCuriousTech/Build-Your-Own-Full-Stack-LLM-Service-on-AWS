@@ -43,6 +43,6 @@ Our Python Module will be a class that initializes and stores the EDGAR company 
 * The class should have two methods. (Method names should follow [PEP8 Style Guide](https://peps.python.org/pep-0008/#method-names-and-instance-variables))
   * Ex: `name_to_cik`
   * Ex: `ticker_to_cik`
-  * The The return values should be a tuple that _**at least**_ includes CIK, Name, Ticker but could include more information.
+  * The return values should be a tuple that _**at least**_ includes CIK, Name, Ticker but could include more information.
 
 {% embed url="https://www.youtube.com/watch?v=JBexmhrqWd0" %}

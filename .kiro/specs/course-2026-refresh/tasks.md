@@ -79,26 +79,26 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
     - _Requirements: 3.1, 3.2, 3.3_
 
 - [ ] 4. Phase 2 — Credibility Sweep
-  - [ ] 4.1 Remove AI-chat artifacts from all pages in `docs/`
+  - [x] 4.1 Remove AI-chat artifacts from all pages in `docs/`
     - Search and remove: "Sure!", "Great question!", "As an AI", "I'd be happy to", "Let me explain"
     - Rewrite affected passages in direct voice
     - _Requirements: 14.1, 14.3_
-  - [ ] 4.2 Remove emoji from all pages in `docs/`
+  - [x] 4.2 Remove emoji from all pages in `docs/`
     - Strip all Unicode emoji characters
     - Replace with plain text descriptions where meaning would be lost
     - _Requirements: 14.3_
-  - [ ] 4.3 Remove "optional" from front-end module titles and headings
+  - [x] 4.3 Remove "optional" from front-end module titles and headings
     - Rename module title to "Partner Bot Web Page"
     - Replace any "optional" labels with "(advanced — skim)" where appropriate
     - _Requirements: 6.1, 6.2, 6.3, 6.4_
-  - [ ] 4.4 Consolidate overlapping instructional content
+  - [x] 4.4 Consolidate overlapping instructional content
     - Identify pages with duplicated content
     - Choose canonical location, consolidate, and link from other pages
     - _Requirements: 14.4_
-  - [ ] 4.5 Fix typographical errors identified during audit
+  - [x] 4.5 Fix typographical errors identified during audit
     - Run spell-check across `docs/` and fix confirmed typos
     - _Requirements: 14.5_
-  - [ ] 4.6 Apply Python 3.12 version standard across all pages
+  - [x] 4.6 Apply Python 3.12 version standard across all pages
     - Search for non-3.12 Python version references
     - Update to 3.12 in setup instructions, Lambda configs, CDK definitions
     - _Requirements: 15.1, 15.2_

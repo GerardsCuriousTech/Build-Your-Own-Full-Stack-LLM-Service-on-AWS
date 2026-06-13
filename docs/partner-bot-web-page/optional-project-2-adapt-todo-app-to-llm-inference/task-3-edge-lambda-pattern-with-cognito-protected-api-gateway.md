@@ -211,7 +211,7 @@ We’ll fetch from your Cognito‑protected API Gateway endpoint, passing the Am
 
 ***
 
-### 1️⃣ Set your API endpoint as an environment variable
+### Step 1: Set your API endpoint as an environment variable
 
 In **Create React App**, name it with the `REACT_APP_` prefix so it’s injected at build time:
 
@@ -224,7 +224,7 @@ Restart your dev server after adding these.
 
 ***
 
-### 2️⃣ Install Amplify Auth helpers (if not already)
+### Step 2: Install Amplify Auth helpers (if not already)
 
 ```bash
 npm install aws-amplify
@@ -234,7 +234,7 @@ And make sure your Amplify project is configured with your Cognito User Pool set
 
 ***
 
-### 3️⃣ Create a helper function to call API Gateway
+### Step 3: Create a helper function to call API Gateway
 
 ```jsx
 // api.js
@@ -265,7 +265,7 @@ export async function callInferenceAPI(payload) {
 
 ***
 
-### 4️⃣ Use it inside a React component
+### Step 4: Use it inside a React component
 
 ```jsx
 // InferenceForm.js
@@ -314,7 +314,7 @@ export default function InferenceForm() {
 
 ***
 
-### 5️⃣ How it works
+### Step 5: How it works
 
 1. **User signs in** through Amplify Authenticator → Amplify stores the Cognito ID token.
 2. **`fetchAuthSession()`** retrieves the token in React code.

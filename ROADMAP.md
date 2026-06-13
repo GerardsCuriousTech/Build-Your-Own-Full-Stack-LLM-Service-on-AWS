@@ -143,7 +143,7 @@ Write `docs/partner-bot-web-page/connect-to-lambda.md` (API Gateway integration 
 Write `docs/mcp-module/README.md` (module purpose and prerequisites), `docs/mcp-module/mcp-concepts.md` (MCP fundamentals — tools, resources, prompts; how MCP relates to the Lambda built earlier; a live-demo section that has students connect an MCP client such as Claude to the course site's own endpoint `https://llm-aws.course.gspivey.com/~gitbook/mcp` and query the content), and `docs/mcp-module/project-mcp-server.md` (pedagogy template; build an MCP server wrapping the existing course Lambda).
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `12.1`, `12.2`, `12.3`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #16
 
 ---
 

@@ -1,0 +1,54 @@
+name: Course CI
+
+# Minimal CI scaffold, seeded ahead of ROADMAP item 9/17 so every PR into
+# development produces a check_run from PR #2 onward. Hard gate today is
+# SUMMARY/internal-link resolution (the Phase 0 failure mode); markdownlint runs
+# non-blocking. Item 9 adds the grep-gate + JSON validators; item 17 adds
+# contract validation, an external link check, and tightens markdownlint.
+
+on:
+  pull_request:
+    branches: [development, main]
+  push:
+    branches: [development]
+
+jobs:
+  quality-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Internal link & SUMMARY resolution (hard gate)
+        run: |
+          python3 - <<'PY'
+          import re, sys, pathlib
+          docs = pathlib.Path("docs")
+          if not docs.is_dir():
+              print("no docs/ directory yet — skipping"); sys.exit(0)
+          link_re = re.compile(r'\[[^\]]*\]\(([^)]+)\)')
+          def broken(md):
+              out = []
+              for m in link_re.finditer(md.read_text(encoding="utf-8", errors="replace")):
+                  target = m.group(1).split('#')[0].strip()
+                  if not target or target.startswith(('http://', 'https://', 'mailto:', 'tel:', '<')):
+                      continue
+                  if not (md.parent / target).exists():
+                      out.append(f"{md}: broken link -> {target}")
+              return out
+          summary = docs / "SUMMARY.md"
+          fatal = broken(summary) if summary.exists() else []
+          warn = [e for md in docs.rglob("*.md") if md != summary for e in broken(md)]
+          if warn:
+              print("::group::Inter-page link warnings (non-blocking)")
+              print("\n".join(warn)); print("::endgroup::")
+          if fatal:
+              print("SUMMARY.md has broken links:"); print("\n".join(fatal))
+              sys.exit(1)
+          print(f"SUMMARY.md links resolve. {len(warn)} inter-page link warning(s).")
+          PY
+
+      - name: Markdown lint (non-blocking until item 17)
+        continue-on-error: true
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: "docs/**/*.md"

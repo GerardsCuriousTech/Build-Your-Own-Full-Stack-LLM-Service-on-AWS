@@ -117,18 +117,18 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
     - Define Lambda response schema: `answer` (string), `meta` (object)
     - Include one valid JSON example and one invalid example with the expected validation error
     - _Requirements: 5.1, 5.2_
-  - [ ] 6.3 Update all existing project pages to reference Contract_Page
+  - [x] 6.3 Update all existing project pages to reference Contract_Page
     - Replace inline Lambda I/O definitions with links to `reference/contract.md`
     - Ensure JSON examples in project pages conform to contract schema
     - _Requirements: 5.3, 5.4_
 
 - [ ] 7. Phase 5 — SEC Lambda SAM Finalization
-  - [ ] 7.1 Finalize SAM `template.yaml` examples in Lambda module
+  - [x] 7.1 Finalize SAM `template.yaml` examples in Lambda module
     - Ensure all code blocks use Python 3.12 runtime
     - Validate JSON blocks parse correctly
     - Cross-reference contract schema for Lambda event/response
     - _Requirements: 4.4, 4.6, 15.1_
-  - [ ] 7.2 Add freshness stamps to SEC Lambda pages
+  - [x] 7.2 Add freshness stamps to SEC Lambda pages
     - Add `Last verified: YYYY-MM` to pages referencing AWS services
     - _Requirements: 13.1_
 

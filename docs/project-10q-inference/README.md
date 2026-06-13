@@ -10,8 +10,8 @@ This project teaches you to close that gap. You build a CDK-deployed Lambda that
 |------|-------|
 | [Part 1: Inference Test](part-1-inference-test.md) | Invoke the model without context and observe its limitations |
 | [Part 2: Inference with Context](part-2-inference-with-context.md) | Provide filing text as context and compare the results |
-| Part 3: Text Extraction | Extract and prepare filing text for the prompt *(upcoming)* |
-| Part 4: Question to Enhanced Prompt | End-to-end Lambda conforming to the contract *(upcoming)* |
+| [Part 3: Text Extraction](part-3-text-extraction.md) | Extract and prepare filing text for the prompt |
+| [Part 4: Question to Enhanced Prompt](part-4-question-to-enhanced-prompt.md) | End-to-end Lambda conforming to the contract |
 
 ## Prerequisites
 

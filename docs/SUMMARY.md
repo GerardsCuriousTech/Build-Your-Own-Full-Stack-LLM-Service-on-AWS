@@ -44,7 +44,8 @@
 * [Project: 10Q Inference (CDK)](project-10q-inference/README.md)
   * [Part 1: Inference Test](project-10q-inference/part-1-inference-test.md)
   * [Part 2: Inference with Context](project-10q-inference/part-2-inference-with-context.md)
-  * [Part 3: Question to Enhanced Prompt](project-10q-inference/project-part-3-question-to-enhanced-prompt.md)
+  * [Part 3: Text Extraction](project-10q-inference/part-3-text-extraction.md)
+  * [Part 4: Question to Enhanced Prompt](project-10q-inference/part-4-question-to-enhanced-prompt.md)
 
 ## Full-Stack Integration
 

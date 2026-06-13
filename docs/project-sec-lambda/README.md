@@ -1,74 +1,39 @@
-# Project SEC Lambda
+# Project: SEC Lambda (SAM)
 
-In this project, we will create two AWS Lambda functions written in Python and leveraging AWS EventBridge. The project will utilize the SEC Module created in a previous project. Lambda 1: Download and Upload SEC Edgar JSON Files. The first Lambda function will download the SEC Edgar JSON files, which are used by the SEC Module to create dictionaries for finding company CIKs based on their name or their stock ticker. The Lambda function will then upload these JSON files to an S3 bucket. This Lambda function should be scheduled to run daily and update the same S3 locations. The S3 bucket should have version history enabled. Lambda 2: Process Requests for 10-K and 10-Q Documents. The second Lambda function will be triggered by JSON input. The JSON input should specify a request type of either "Annual" or "Quarter".
+In this project you build two AWS Lambda functions deployed with SAM CLI. Together they form an event-driven backend that keeps SEC EDGAR data fresh and answers questions about company filings on demand.
 
-* If the request type is "Annual", the Lambda function should take a stock ticker or a company name and the year as input.
-* If the request type is "Quarter", the Lambda function should take a stock ticker or a company name, the year, and the quarter as input. The Lambda function will then return the contents of either a 10-K or 10-Q document to the caller.
+## Architecture
 
-### Lambda 1: Download and Upload SEC Edgar JSON Files
+The project contains two functions with different invocation patterns:
 
-This Lambda function will be responsible for downloading the SEC Edgar JSON files and uploading them to an S3 bucket. Here's a basic code sample:
+**Lambda 1 — EDGAR File Refresh (scheduled)**
+Downloads the SEC EDGAR company-tickers JSON file and uploads it to an S3 bucket. A SAM `Schedule` event triggers the function daily. The S3 bucket has versioning enabled so each upload creates a recoverable snapshot rather than overwriting the previous data.
 
-```python
-import boto3
-import requests
+**Lambda 2 — Document Retrieval (synchronous)**
+Accepts a JSON request conforming to the [Lambda Contract](../reference/contract.md), retrieves the specified 10-K or 10-Q filing text, and returns a response through a synchronous `Invoke` call.
 
-def lambda_handler(event, context):
-    s3 = boto3.client('s3')
-    url = "https://www.sec.gov/files/company_tickers.json"  # replace with the actual URL
-    response = requests.get(url)
-    s3.put_object(Bucket='your-bucket-name', Key='company_tickers.json', Body=response.content)
-```
+Both functions reuse the SEC modules you built in earlier projects (CIK lookup, EDGAR API library). The key lesson is that Lambda is *not* your laptop: dependencies must be explicitly packaged, environment variables replace hardcoded paths, and the SEC Fair Access policy still applies in the cloud.
 
-This code uses the requests library to download the file and the boto3 library to upload the file to S3. You'll need to replace 'your-bucket-name' with the name of your S3 bucket and the url with the actual URL of the SEC Edgar JSON files. Going forward your SEC Edgar module can use your S3 location instead of the SEC URL. This allows you to remove a run time dependency from the SEC's website for looking up files.
+## What you will learn
 
-### Lambda 2: Process Requests for 10-K and 10-Q Documents
+- Initializing a SAM project with `sam init` and structuring `template.yaml`
+- Packaging Python dependencies (notably `requests`) into a Lambda deployment
+- Scheduling Lambda invocations with EventBridge via SAM event configuration
+- Handling synchronous Lambda invocations and mapping request/response to a defined contract
+- Reading CloudWatch logs to diagnose runtime failures
 
-This Lambda function will process JSON input and return the contents of a 10-K or 10-Q document. Running a Lambda this way is a synchronous [Invoke](https://docs.aws.amazon.com/lambda/latest/api/API_Invoke.html).&#x20;
+## Prerequisites
 
-Here's a basic code sample:
+- Completed: Project SEC CIK Lookup Module
+- Completed: Project SEC EDGAR API Library
+- An AWS account with CLI access configured (see [Setup: AWS Account](../reference/setup-aws-account.md))
+- Bedrock model access enabled (see [Setup: Bedrock Access](../reference/setup-bedrock-access.md))
+- SAM CLI installed ([AWS SAM CLI install guide](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html))
+- Python 3.12
 
-```python
-import json
+## Pages in this module
 
-def lambda_handler(event, context):
-    request_type = event['request_type']
-    company = event['company']
-    year = event['year']
-    
-    
-    if request_type == 'Annual':
-        # process annual request
-        document = get_annual_document(company, year)
-    elif request_type == 'Quarter':
-        quarter = event['quarter']
-        # process quarterly request
-        document = get_quarterly_document(company, year, quarter)
-    
-    return {
-        'statusCode': 200,
-        'body': json.dumps(document)
-    }
-```
-
-This code takes a JSON input with the request type, company, and year. If the request type is 'Quarter', it also expects a quarter. The sample code assumes the json format below but this is just a sample, your layout and field choices are your own. For example you may have chosen quarter to be an `int`1-4 in your SEC module.
-
-```json
-{
-  "request_type": "Quarter",
-  "company": "AAPL",
-  "year": "2022",
-  "quarter": "Q2"
-}
-```
-
-It then calls the get\_annual\_document or get\_quarterly\_document function to get the document. These functions are not defined in this sample, you should already have them implemented in your SEC module so import your module and use it here. Remember to replace 'your-bucket-name' with the name of your S3 bucket and the url with the actual URL of the SEC Edgar JSON files. Scheduling Lambda 1To schedule the first Lambda function to run daily, you can use AWS EventBridge. Here's how you can do it:
-
-* In the AWS Management Console, go to the EventBridge service.
-* Click on 'Create rule'.
-* Enter a name and description for the rule.
-* For 'Define pattern', select 'Schedule'.
-* Enter a schedule expression. For example, to run the function every day at 12:00 PM, you can use the expression cron(0 12 \* \* ? \*).
-  * To test this you can set this more frequently for example every minute. You can then check the logs to see that your Lamda has ran.
-* For 'Select targets', choose 'Lambda function' and select your function.
-* Click on 'Create'.
+| Page | Purpose |
+|------|---------|
+| [Lambda Project Setup](lambda-project-setup.md) | Initialize the SAM project, configure `template.yaml`, package dependencies |
+| [Lambda Error Handling](lambda-error-handling.md) | Error patterns, CloudWatch logs, local debugging with `sam local invoke` |

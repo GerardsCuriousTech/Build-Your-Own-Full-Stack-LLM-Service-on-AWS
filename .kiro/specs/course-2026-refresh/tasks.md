@@ -133,14 +133,14 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
     - _Requirements: 13.1_
 
 - [ ] 8. Phase 6 — CDK Bridge Module
-  - [ ] 8.1 Write `docs/cdk-bridge/README.md` module overview
+  - [x] 8.1 Write `docs/cdk-bridge/README.md` module overview
     - Explain module purpose: transition from SAM to CDK
     - _Requirements: 7.1_
-  - [ ] 8.2 Write `docs/cdk-bridge/why-cdk.md` concepts page
+  - [x] 8.2 Write `docs/cdk-bridge/why-cdk.md` concepts page
     - When to use SAM vs CDK
     - CDK advantages for multi-resource stacks
     - _Requirements: 7.2_
-  - [ ] 8.3 Write `docs/cdk-bridge/project-cdk-init.md` project page
+  - [x] 8.3 Write `docs/cdk-bridge/project-cdk-init.md` project page
     - Follow Pedagogy_Template structure
     - Guide through `cdk init` with Python 3.12
     - Include CDK project structure explanation

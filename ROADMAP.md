@@ -98,7 +98,7 @@ Write `.grep-gate-rules.yml` defining the banned-pattern rules (hardcoded model 
 Write `docs/cdk-bridge/README.md` (module purpose: the SAM → CDK transition), `docs/cdk-bridge/why-cdk.md` (when and why to move from SAM to CDK; CDK advantages for multi-resource stacks), and `docs/cdk-bridge/project-cdk-init.md` (pedagogy template; `cdk init` targeting Python 3.12; CDK project structure). Every module after this one in the sequence uses CDK as its deployment tool.
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `8.1`, `8.2`, `8.3`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #11
 
 ---
 

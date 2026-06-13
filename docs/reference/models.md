@@ -55,3 +55,6 @@ When the course adopts a newer model, update only this page. All other pages lin
 1. Update the table above with the new model ID, ARN pattern, and name.
 2. Update the Python example to reflect the new `modelId` value.
 3. Run the grep-gate to confirm no other page embeds the old or new ID directly.
+
+---
+Last verified: 2026-06

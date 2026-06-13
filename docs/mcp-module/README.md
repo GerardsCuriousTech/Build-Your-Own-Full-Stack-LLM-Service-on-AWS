@@ -23,3 +23,6 @@ In this module you first experience MCP as a user (connecting a client to a live
 Lambda functions are powerful but isolated. A user must know the exact request schema, invoke the function directly, and parse the response. MCP removes that friction: an LLM client discovers available tools at runtime, understands their parameters from schema metadata, and invokes them without custom glue code.
 
 Building an MCP server around your existing Lambda means any compatible client — Claude Desktop, Cursor, a custom agent — can query SEC filings through your infrastructure without modification.
+
+---
+Last verified: 2026-06

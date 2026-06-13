@@ -70,3 +70,6 @@ The [10-Q filing](https://www.sec.gov/ix?doc=/Archives/edgar/data/1018724/000101
 **Key takeaway:** an LLM answering without context produces plausible but inaccurate financial details. This is why Part 2 provides the filing text as context.
 
 When you run this exercise, pick a recent filing (within the last few months) and ask about a specific figure from it. The model's training cutoff means it will not have seen very recent disclosures — use that gap to demonstrate the value of retrieval-augmented context.
+
+---
+Last verified: 2026-06

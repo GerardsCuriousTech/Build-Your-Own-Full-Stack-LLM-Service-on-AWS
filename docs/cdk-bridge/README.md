@@ -19,3 +19,6 @@ SAM served you well for the SEC Lambda project — a single function, a `templat
 ## What comes after
 
 Every module past this point — 10Q Inference, Partner Bot Web Page, MCP Server, RAG Pipeline — deploys with CDK. The patterns you learn here carry forward unchanged.
+
+---
+Last verified: 2026-06

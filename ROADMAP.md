@@ -170,7 +170,7 @@ Write `scripts/validate-contract.py` (load the schema from `reference/contract.m
 Validate `docs/SUMMARY.md` against the filesystem: every entry resolves to an existing file, and no content file is orphaned outside SUMMARY.md. Add `Last verified: YYYY-MM` stamps to every page naming a versioned AWS service or console navigation path, and populate `freshness-checklist.md` with all stamped pages and their next-review dates.
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `18.1`, `18.2`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #19
 
 ---
 

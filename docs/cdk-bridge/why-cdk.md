@@ -97,3 +97,6 @@ This course uses SAM for the SEC Lambda project because it is genuinely simpler 
 | Local testing | `sam local invoke` | `pytest` + direct Lambda invocation |
 
 The next page walks you through initializing your first CDK project.
+
+---
+Last verified: 2026-06

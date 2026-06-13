@@ -67,3 +67,6 @@ These extra fields are informational and do not break contract conformance (the 
 - For the CDK stack, bundle your Lambda dependencies using a `requirements.txt` that includes `langchain`, `langchain-aws`, `langchain-community`, `faiss-cpu`, and `requests`. CDK's `PythonFunction` construct (from `aws-cdk.aws-lambda-python-alpha`) handles `pip install` during deployment.
 - Test locally with `sam local invoke` or a simple Python script that calls your handler function directly with a test event. Compare the output against your original 10Q Inference Lambda to confirm the RAG version produces tighter, more relevant answers.
 - FAISS index construction takes a few seconds for a typical 10-Q (~50-100 chunks). This is acceptable for a learning project. A production system would pre-index filings and persist the index.
+
+---
+Last verified: 2026-06

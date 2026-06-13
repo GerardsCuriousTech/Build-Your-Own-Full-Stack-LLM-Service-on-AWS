@@ -88,3 +88,6 @@ So the total investment in Anthropic across Q3 2023 and Q1 2024 was $4 billion.
 **Key takeaway:** with the filing text as context, the model extracts the correct figures directly from the disclosure. Compare this to the incorrect response in Part 1 where no context was provided. The model did not learn new facts — it simply had access to the relevant document.
 
 When you run this exercise, use the same company and question from Part 1. Download the filing text using your EDGAR API library and include it in the prompt. The contrast between your two responses is the core deliverable of this part.
+
+---
+Last verified: 2026-06

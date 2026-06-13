@@ -125,3 +125,6 @@ All messages are JSON-RPC 2.0. The client never calls a tool it has not first di
 ## Next step
 
 In [Project: MCP Server](project-mcp-server.md) you build an MCP server that exposes your SEC Lambda as a tool, deploy it, and test it with a real client.
+
+---
+Last verified: 2026-06

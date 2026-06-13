@@ -168,3 +168,6 @@ The external interface — the [Lambda Contract](../reference/contract.md) reque
 ## Next step
 
 In [Project: RAG Pipeline](project-rag-pipeline.md) you implement this pipeline end-to-end using LangChain and FAISS, deployed via CDK.
+
+---
+Last verified: 2026-06

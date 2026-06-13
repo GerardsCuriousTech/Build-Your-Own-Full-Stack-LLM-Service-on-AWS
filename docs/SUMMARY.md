@@ -42,18 +42,21 @@
   * [Project: CDK Init](cdk-bridge/project-cdk-init.md)
 * [Introduction to Large Language Models](introduction-to-large-language-models.md)
 * [Project: 10Q Inference (CDK)](project-10q-inference/README.md)
-  * [Part 1: Inference Test](project-10q-inference/part-1-inference-test.md)
-  * [Part 2: Inference with Context](project-10q-inference/part-2-inference-with-context.md)
-  * [Part 3: Text Extraction](project-10q-inference/part-3-text-extraction.md)
-  * [Part 4: Question to Enhanced Prompt](project-10q-inference/part-4-question-to-enhanced-prompt.md)
+  * [Part 1: Inference Test](project-10q-inference/project-part-1-inference-test/README.md)
+    * [Sample Prompt without Context](project-10q-inference/project-part-1-inference-test/sample-prompt-without-context.md)
+  * [Part 2: Inference with Context](project-10q-inference/project-part-2-inference-with-context/README.md)
+    * [Sample Prompt with Context](project-10q-inference/project-part-2-inference-with-context/sample-prompt-with-context.md)
+  * [Part 3: Question to Enhanced Prompt](project-10q-inference/project-part-3-question-to-enhanced-prompt.md)
 
 ## Full-Stack Integration
 
 * [Partner Bot Web Page](partner-bot-web-page/README.md)
-  * [Amplify Gen 2 Setup](partner-bot-web-page/amplify-gen2-setup.md)
-  * [Build the Chat Form](partner-bot-web-page/build-the-chat-form.md)
-  * [Connect to Lambda via API Gateway](partner-bot-web-page/connect-to-lambda.md)
-  * [Authentication with Cognito](partner-bot-web-page/authentication-with-cognito.md)
+  * [Amplify React Quickstart](partner-bot-web-page/optional-project-1-amplify-react-quickstart.md)
+  * [Amplify Concepts: Functions & UI](partner-bot-web-page/amplify-concepts-amplify-functions-and-amplify-ui.md)
+  * [Adapt the App to LLM Inference](partner-bot-web-page/optional-project-2-adapt-todo-app-to-llm-inference/README.md)
+    * [Task 1: Build the Form with Amplify UI](partner-bot-web-page/optional-project-2-adapt-todo-app-to-llm-inference/task-1-build-the-form-with-amplify-ui-components.md)
+    * [Task 2: Expose Lambda behind API Gateway](partner-bot-web-page/optional-project-2-adapt-todo-app-to-llm-inference/task-2-exposing-an-existing-lambda-behind-api-gateway-for-an-amplify-frontend.md)
+    * [Task 3: Edge Lambda with Cognito-Protected API](partner-bot-web-page/optional-project-2-adapt-todo-app-to-llm-inference/task-3-edge-lambda-pattern-with-cognito-protected-api-gateway.md)
 
 ## Advanced Modules
 

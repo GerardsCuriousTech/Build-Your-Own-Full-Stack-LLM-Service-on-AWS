@@ -176,16 +176,16 @@ Phased restructuring of the GitBook course repository. Phase 0 (bootstrap) block
   - Ensure CDK Bridge and 10Q Inference modules follow pedagogy template, reference contract/models pages, and use CDK for deployment. Ask the user if questions arise.
 
 - [ ] 11. Phase 8 — Partner Bot Web Page (Front-End Amplify Gen 2)
-  - [ ] 11.1 Rewrite `docs/partner-bot-web-page/README.md` module overview
+  - [x] 11.1 Rewrite `docs/partner-bot-web-page/README.md` module overview
     - Title: "Partner Bot Web Page" — no "optional" qualifier
     - Position as mandatory midpoint deliverable
     - _Requirements: 6.1, 6.2_
-  - [ ] 11.2 Write `docs/partner-bot-web-page/amplify-gen2-setup.md`
+  - [x] 11.2 Write `docs/partner-bot-web-page/amplify-gen2-setup.md`
     - Amplify Gen 2 project initialization with Vite
     - No CRA references
     - Follow Pedagogy_Template
     - _Requirements: 9.1, 9.2, 9.3, 9.4_
-  - [ ] 11.3 Write `docs/partner-bot-web-page/build-the-chat-form.md`
+  - [x] 11.3 Write `docs/partner-bot-web-page/build-the-chat-form.md`
     - React form with Amplify UI components
     - Follow Pedagogy_Template
     - _Requirements: 9.4, 16.1_

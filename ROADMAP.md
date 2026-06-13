@@ -125,7 +125,7 @@ Write `docs/project-10q-inference/part-3-text-extraction.md` (extracting text fr
 Rewrite `docs/partner-bot-web-page/README.md` with the title "Partner Bot Web Page" (no "optional" qualifier), positioned as a mandatory midpoint deliverable. Write `amplify-gen2-setup.md` (Amplify Gen 2 project init with Vite; no Create React App references) and `build-the-chat-form.md` (React form with Amplify UI components). Migrate relevant content from the existing `optional-project-1-amplify-react-quickstart.md` and `amplify-concepts-amplify-functions-and-amplify-ui.md` (currently the SUMMARY targets) and repoint `docs/SUMMARY.md`. Follow the pedagogy template.
 
 - Spec: `.kiro/specs/course-2026-refresh/` · tasks `11.1`, `11.2`, `11.3`
-- [ ] Complete · PR: —
+- [x] Complete · PR: #14
 
 ---
 
